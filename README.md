@@ -3,6 +3,11 @@
 Vulnerability research on widely used open source packages, reported
 privately to maintainers and published only after a fix ships.
 
+- brace-expansion 5.0.13, 3.0.10, 2.1.8 and 1.1.22 (2026-11-11): CPU denial
+  of service from patterns with unmatched braces and from the `{a},b}` check,
+  reachable through minimatch and glob. Reported with a patch and tests,
+  credited as finder in GHSA-6jwq-xf8q-xcwh (High).
+  https://github.com/juliangruber/brace-expansion/security/advisories/GHSA-6jwq-xf8q-xcwh
 - amqplib 2.3.0 (2026-11-08): security release for a client crash and
   unchecked inbound frame sizes reachable from a malicious or non-compliant
   broker. Reported with a patch and tests, credited in the release notes.

@@ -13,7 +13,13 @@ privately to maintainers and published only after a fix ships.
   broker. Reported with a patch and tests, credited in the release notes.
   https://github.com/amqp-node/amqplib/releases/tag/v2.3.0
 
-## Malicious package reports (OSV)
+## Malicious package reports
+
+- @ethersphere/bee-js 13.3.0 (2026-11-13): compromised npm release with a
+  malicious postinstall loader that stole Swarm node keys and installed a
+  remote-access agent. Credited as finder in the project's advisory
+  GHSA-9f32-98m9-4jx3 (Critical).
+  https://github.com/ethersphere/bee-js/security/advisories/GHSA-9f32-98m9-4jx3
 
 22 entries in the OpenSSF malicious-packages database (ossf/malicious-packages),
 all npm, 15 as finder and 7 as analyst, July to October 2026. Found through

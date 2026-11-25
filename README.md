@@ -3,22 +3,11 @@
 Vulnerability research on widely used open source packages, reported
 privately to maintainers and published only after a fix ships.
 
-- brace-expansion 5.0.13, 3.0.10, 2.1.8 and 1.1.22 (2026-11-11): CPU denial
-  of service from patterns with unmatched braces and from the `{a},b}` check,
-  reachable through minimatch and glob. Reported with a patch and tests,
-  credited as finder in GHSA-6jwq-xf8q-xcwh (High).
-  https://github.com/juliangruber/brace-expansion/security/advisories/GHSA-6jwq-xf8q-xcwh
-- amqplib 2.3.0 (2026-11-08): security release for a client crash and
-  unchecked inbound frame sizes reachable from a malicious or non-compliant
-  broker. Reported with a patch and tests, credited in the release notes and
-  as reporter in GHSA-37f9-7m79-6866 (Medium, published 2026-11-25).
-  https://github.com/amqp-node/amqplib/releases/tag/v2.3.0
-  https://github.com/amqp-node/amqplib/security/advisories/GHSA-37f9-7m79-6866
-- authentik 2026.8.7 and 2026.5.9 (advisory published 2026-11-25): federated
-  JWTs matched to existing users by username, so a token from a federated
-  source could sign in as an existing account. Reported with a patch and
-  tests, credited as reporter in GHSA-6v2c-352p-ghmw (High).
-  https://github.com/goauthentik/authentik/security/advisories/GHSA-6v2c-352p-ghmw
+| package | title | advisory |
+|---|---|---|
+| brace-expansion | Unbounded parsing and expansion work causes CPU denial of service | [GHSA-6jwq-xf8q-xcwh](https://github.com/juliangruber/brace-expansion/security/advisories/GHSA-6jwq-xf8q-xcwh) |
+| amqplib | Malicious broker can crash the client (frameMax below minimum) and incoming frame sizes are never checked | [GHSA-37f9-7m79-6866](https://github.com/amqp-node/amqplib/security/advisories/GHSA-37f9-7m79-6866) |
+| authentik | Federated JWTs matched to existing users by username | [GHSA-6v2c-352p-ghmw](https://github.com/goauthentik/authentik/security/advisories/GHSA-6v2c-352p-ghmw) |
 
 ## Malicious package reports
 
